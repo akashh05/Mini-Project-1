@@ -1,0 +1,46 @@
+:root{
+    --clr-dark: #1e2532;
+    --clr-grey: #656e83;
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;;
+    --transition: all 300ms ease-in-out;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+}
+
+
+/* backgrounds */
+.bg-dark{background-color: var(--clr-dark);}
+
+.text-center{ text-align: center;}
+
+.fs-15{font-size: 15px;}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+/* footer */
+.footer{
+    padding: 3rem 0;
+}
+.footer-content p{
+    color: var(--clr-grey);
+}
+.footer-content p span{
+    color: var(--clr-white);
+}

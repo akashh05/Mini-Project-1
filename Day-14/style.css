@@ -1,0 +1,85 @@
+:root{
+    --clr-blue: #1A91F0;
+    --clr-white: #fff;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;;
+    --transition: all 300ms ease-in-out;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+/* buttons */
+.btn{
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn-primary{
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    transition: var(--transition);
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+
+.print-btn-sc{
+    margin: 2rem 0 6rem 0;
+}
+
+/* print section */
+@media print{
+    body *{
+        visibility: hidden;
+    }
+
+    .non_print_area{
+        display: none;
+    }
+
+    .print_area, .print_area *{
+        visibility: visible;
+    }
+
+    .print_area{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+}
